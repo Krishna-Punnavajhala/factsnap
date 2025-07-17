@@ -15,7 +15,7 @@ topic = st.text_input("🔍 Search Topic", placeholder="e.g. Ukraine, AI regulat
 
 # ----- FUNCTION TO FETCH NEWS -----
 def fetch_articles(query):
-    api_key = "516954708296401fa45e91c408680ce2"  # 🔑 Replace this with your key
+    api_key = "YOUR_API_KEY"  # 🔑 Replace this with your key
     url = f"https://newsapi.org/v2/everything?q={query}&language=en&pageSize=5&sortBy=publishedAt&apiKey={api_key}"
 
     response = requests.get(url)
